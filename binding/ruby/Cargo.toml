@@ -1,0 +1,11 @@
+[package]
+name = "ruby_binding"
+version = "0.1.0"
+authors = ["subuta <shunta.3110@gmail.com>"]
+
+[dependencies]
+rutie = "0.8.2"
+
+[lib]
+name = "ruby_binding"
+crate-type = ["dylib"]
