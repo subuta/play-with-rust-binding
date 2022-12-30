@@ -11,7 +11,12 @@ Cargo.lock
 
 
 # Added by cargo
-
 **/target
 
+# directories generated at "binding/python"
 **/.env
+
+# directories generated at "binding/js"
+**/node_modules
+**/pkg
+**/dist

@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:node": "wasm-pack build --target nodejs",
+    "build:browser": "webpack",
+    "serve": "webpack serve",
+    "node": "node ./node.js",
+    "start": "cd ./dist && serve -l 8080"
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "1.5.0",
+    "html-webpack-plugin": "^5.3.2",
+    "serve": "^14.1.2",
+    "text-encoding": "^0.7.0",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

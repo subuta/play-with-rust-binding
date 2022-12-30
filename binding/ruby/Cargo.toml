@@ -2,6 +2,7 @@
 name = "ruby_binding"
 version = "0.1.0"
 authors = ["subuta <shunta.3110@gmail.com>"]
+edition = "2021"
 
 [dependencies]
 rutie = "0.8.2"
