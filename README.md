@@ -31,3 +31,16 @@ make bash_php
 # Run php binding
 make run_php
 ```
+
+## How to develop "python binding"
+
+```bash
+# Build python binding
+make build_python
+
+# Debug python binding docker image
+make bash_python
+
+# Run python binding
+make run_python
+```

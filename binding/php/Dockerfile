@@ -1,8 +1,6 @@
 # Minimum version 'ext-php-rs' supports.
 FROM php:8.0-cli-bullseye
 
-RUN cat /etc/issue
-
 # SEE: [linux - When installing Rust toolchain in Docker, Bash `source` command doesn't work - Stack Overflow](https://stackoverflow.com/a/58169817/9998350)
 # Update default packages
 RUN apt-get -qq update

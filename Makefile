@@ -23,3 +23,16 @@ bash_php:
 .PHONY: run_php
 run_php:
 	docker run --rm -t -v ${PWD}/binding/php:/myapp play-with-rust-binding-php php run.php
+
+# Python commands
+.PHONY: build_python
+build_python:
+	cd ./binding/python && docker build -t play-with-rust-binding-python .
+
+.PHONY: bash_python
+bash_python:
+	docker run --rm -it -v ${PWD}/binding/python:/myapp --entrypoint /bin/bash play-with-rust-binding-python
+
+.PHONY: run_python
+run_python:
+	docker run --rm -t -v ${PWD}/binding/python:/myapp play-with-rust-binding-python python run.py
