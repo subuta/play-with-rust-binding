@@ -1,7 +1,12 @@
 # play-with-rust-binding
 Example of rust-based shared library with language binding
 
-## How to develop
+## Bindings
+
+- ruby: via [danielpclark/rutie: “The Tie Between Ruby and Rust.”](https://github.com/danielpclark/rutie)
+- php: via [davidcole1340/ext-php-rs: Bindings for the Zend API to build PHP extensions natively in Rust.](https://github.com/davidcole1340/ext-php-rs)
+
+## How to develop "ruby binding"
 
 ```bash
 # Build ruby binding
@@ -14,6 +19,15 @@ make bash_ruby
 make run_ruby
 ```
 
-## Bindings
+## How to develop "php binding"
 
-- ruby: via [danielpclark/rutie: “The Tie Between Ruby and Rust.”](https://github.com/danielpclark/rutie)
+```bash
+# Build php binding
+make build_php
+
+# Debug php binding docker image
+make bash_php
+
+# Run php binding
+make run_php
+```

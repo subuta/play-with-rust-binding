@@ -9,7 +9,7 @@ RUN apt-get install -y -q \
     build-essential \
     curl
 
-# Install "rust" runtime for native build `wasmer` gem on `bundle install`.
+# Install "rust" runtime for build language binding.
 # Get Rust; NOTE: using sh for better compatibility with other base images
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
@@ -24,5 +24,3 @@ RUN bundle install
 
 # Do build language binding.
 RUN rake
-
-COPY . /myapp
