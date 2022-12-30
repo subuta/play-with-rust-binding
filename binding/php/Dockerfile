@@ -38,10 +38,11 @@ RUN cargo install cargo-php
 
 WORKDIR /myapp
 
-COPY . /myapp
+COPY ./binding/php /myapp
+COPY ./shared /myapp/src/shared
 
 # Create "php.ini" in container for module installation.
-COPY php-development.ini /usr/local/etc/php/php.ini
+COPY ./binding/php/php-development.ini /usr/local/etc/php/php.ini
 
 # Install php extension to "php.ini"
 RUN cargo php install --release --yes

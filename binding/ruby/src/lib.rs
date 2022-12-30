@@ -1,6 +1,8 @@
 #[macro_use]
 extern crate rutie;
 
+mod shared;
+
 use rutie::{Class, Object, RString, VM};
 
 class!(RubyExample);
@@ -11,7 +13,7 @@ methods!(
     fn pub_reverse(input: RString) -> RString {
         let ruby_string = input.map_err(|e| VM::raise_ex(e)).unwrap();
 
-        RString::new_utf8(&ruby_string.to_string().chars().rev().collect::<String>())
+        RString::new_utf8(&shared::do_reverse(&ruby_string.to_string()))
     }
 );
 

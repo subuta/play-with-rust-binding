@@ -21,6 +21,7 @@ RUN curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 
 WORKDIR /myapp
 
-COPY . /myapp
+COPY ./binding/js /myapp
+COPY ./shared /myapp/src/shared
 
 RUN npm i

@@ -18,7 +18,8 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 
 WORKDIR /myapp
 
-COPY . /myapp
+COPY ./binding/ruby /myapp
+COPY ./shared /myapp/src/shared
 
 RUN bundle install
 

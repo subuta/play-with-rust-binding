@@ -18,7 +18,8 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 
 WORKDIR /myapp
 
-COPY . /myapp
+COPY ./binding/python /myapp
+COPY ./shared /myapp/src/shared
 
 # Install python extension module.
 RUN pip install .

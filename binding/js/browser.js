@@ -3,6 +3,6 @@
 const rust = import('./pkg/index.js');
 rust
     .then(m => {
-        document.body.innerHTML = `1 + 2 = ${m.add(1, 2)}`
+        document.body.innerHTML = `reverse('apples') = ${m.reverse('apples')}`
     })
     .catch(console.error);
