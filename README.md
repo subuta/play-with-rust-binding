@@ -56,7 +56,7 @@ make build_js
 # Debug js binding docker image
 make bash_js
 
-# Run js binding
+# Run js binding on Node.js (in server JS)
 make run_js
 
 # Run js binding(with "wasm") in the browser
