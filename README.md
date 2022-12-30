@@ -10,6 +10,10 @@ Example of rust-based shared library with language binding
 
 ## How to develop "ruby binding"
 
+```ruby
+pp RubyExample.reverse("apples")
+```
+
 ```bash
 # Build ruby binding
 make build_ruby
@@ -22,6 +26,12 @@ make run_ruby
 ```
 
 ## How to develop "php binding"
+
+```php
+<?php
+
+var_dump(reverse("apples"));
+```
 
 ```bash
 # Build php binding
@@ -36,6 +46,10 @@ make run_php
 
 ## How to develop "python binding"
 
+```python
+print(python_binding.reverse("apples"))
+```
+
 ```bash
 # Build python binding
 make build_python
@@ -48,6 +62,10 @@ make run_python
 ```
 
 ## How to develop "js binding"
+
+```python
+console.log(`reverse('apples') = ${pkg.reverse('apples')}`)
+```
 
 ```bash
 # Build js binding
